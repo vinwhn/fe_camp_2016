@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet"href="../css/login.css">
+</head>
+<body>
+<div class="login">
+    <div class="login-header">
+        <h1>欢迎登录</h1>
+    </div>>
+    <div class="login-content">
+        <label for="username"></label>
+        <input type="text" id="username" placeholder="邮箱/用户名（Email/user name）" tabindex="1"><br/>
+        <label for="password"></label>
+        <input type="password" id="password"placeholder="请输入密码（password）" tabindex="2"><br/>
+        <button id="button">登录</button>
+        <label for="form_remember">
+        <input name="remember" type="checkbox" id="form_remember" tabindex="3">记住我
+        </label><br/><br/>
+    </div>
+    <div class="footer">
+        <a href="" target="_blank"id="forget" style="color:#030213"> 忘记了密码？Forgot Password ?</a><br/>
+        <a href="" target="_blank" id="register" style="color:#030213">新用户注册 New users register</a><br/>
+    </div>
+</div>
+<script>
+    var btn = document.getElementById("button");
+    btn.onclick=function () {
+        alert("登录暂时都不会成功哦");
+        alert("请稍等~")
+    }
+    var btn = document.getElementById("forget");
+    btn.onclick=function () {
+        alert("同学不好意思服务暂未开启，请稍等");
+    }
+    var btn = document.getElementById("register");
+    btn.onclick =function () {
+        alert("同学不好意思未开放注册哦，请稍等");
+    }
+</script>
+</body>
+</html>
