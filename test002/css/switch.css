@@ -1,0 +1,40 @@
+
+/*.image-box img{*/
+    /*position: absolute;*/
+    /*left: 200px;*/
+    /*top: 100px;*/
+/*}*/
+.button-box button{
+    display: block;
+    position: relative;
+    top: 150px;
+    left: 55%;
+    height:49px;
+    width: 240px;
+    margin: 150px 0 0 0;
+    border-radius: 10px;
+}
+.bw {
+    background: url("../image/bw-bg.png") no-repeat top;
+    background-size:cover ;
+}
+.xx{
+    background: url("../image/xx-bg.png") no-repeat top;
+    background-size: cover;
+}
+.btn1{
+     background-image: url("../image/btn-gray.png");
+     font-size: 32px;
+     color:rgb(114,173,183);
+     text-align: left;
+     padding-left: 20px;
+     margin: 0;
+ }
+.btn2{
+    background-image: url("../image/btn-blue.png");
+    font-size: 32px;
+    color: rgb(15, 67, 88);
+    text-align: left;
+    padding-left: 20px;
+    margin:0;
+}

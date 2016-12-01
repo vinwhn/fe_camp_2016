@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>switch</title>
+    <link rel="stylesheet" href="../css/switch.css">
+</head>
+<body class="bw" id="backimg">
+<!--<div class="image-box" >-->
+   <!--<img class="bw" src="../image/bw.png" style="opacity: 1" >-->
+    <!--<img class="xx" src="../image/xx.png" style="opacity: 0">-->
+<!--</div>-->
+<div class="button-box">
+    <button class="btn1" id="xx">小新</button>
+    <button class="btn2" id="bw">巴卫</button>
+</div>
+<script>
+    var btns=document.getElementsByTagName("button");
+    var imgs=document.getElementsByTagName("img");
+    var back=document.getElementById("backimg");
+        for(var i=0;i<btns.length;i++) {
+    btns[i].onclick = function () {
+        if(this.className == "btn1") {
+            this.className = "btn2";
+        }
+            var id = this.id;
+        var btn=document.getElementsByClassName("btn2");
+        for(var j=0;j<btn.length;j++){
+            if(btn[j].id!=id){
+                btn[j].className = 'btn1';
+            }
+        }
+//            changepic(id);
+            changeback(id);
+       }
+    }
+//       function changepic(id) {
+//         for(var i=0;i<imgs.length;i++) {
+//            if (imgs[i].className==id) {
+//               imgs[i].style.opacity=1;
+//           }
+//           else{
+//          imgs[i].style.opacity=0;
+//                }
+//            }
+//        }
+        function changeback(id) {
+            back.className=id;
+        }
+</script>
+</body>
+</html>
