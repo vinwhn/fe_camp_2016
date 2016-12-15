@@ -1,0 +1,147 @@
+@font-face{
+    font-family: 'document';
+    src:url('../font/document.eot');
+    src:url('../font/document.eot?#iefix')format('embedded-opentype'),
+        url('../font/document.woff') format('woff'),
+        url('../font/document.ttf') format('truetype'),
+        url('../font/document.svg#micon') format('svg');
+        font-style: normal;
+        font-weight: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+            font-family: 'document';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+*{
+    font-family: Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    margin: 0;
+}
+.header{
+    background-image: url(../image/header.jpg);
+    height: 500px;
+}
+#information{
+    float: left;
+    padding:40px 40px;
+    margin: 50px 0 0 220px;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 30px;
+}
+#introduce{
+    overflow: auto;
+    padding: 50px 100px 40px 60px;
+    border-bottom: 1px solid gray;
+    line-height: 35px;
+    max-height: 150px;
+}
+.my_picture{
+    width: 189px;
+    height: 189px;
+    padding:20px;
+    border-radius: 100%;
+}
+#link{
+    overflow: hidden;
+    padding:40px 20%;
+    line-height: 40px;
+}
+.icon-location::before{
+    content: '\e802';
+    display: inline;
+    font-size: 25px;
+    margin: 0 35px 0 5px;
+}
+.icon-mail-alt::before{
+    content: '\f0e0';
+    display: inline;
+    font-size: 23px;
+    margin: 0 25px 0 0;
+}
+.icon-phone-squared::before{
+    content: '\f098';
+    display: inline;
+    font-size: 27px;
+    margin: 0 25px 0 0;
+}
+.icon-qq::before{
+    content:'\f1d6';
+    display: inline;
+    font-size: 25px;
+    margin:0 25px 0 0;
+}
+.icon-github::before{
+    content: '\f300';
+    display: inline;
+    font-size: 25px;
+    margin:0 25px 0 0;
+}
+.icon-github a{
+    text-decoration: none;
+    color:black;
+}
+.icon-doc-text::before{
+    content: '\f0f6';
+    display: inline;
+    color: gray;
+    font-size: 25px;
+    margin:0 30px 0 0;
+}
+.icon-th-list::before{
+    content: '\e800';
+    display: inline;
+    color: gray;
+    font-size: 25px;
+    margin:0 30px 0 0;
+}
+.icon-lightbulb::before{
+    content: '\f0eb';
+    display: inline;
+    color: gray;
+    font-size: 25px;
+    margin:0 30px 0 0;
+}
+.icon-paper-plane-empty::before{
+    content: '\f1d9';
+    display: inline;
+    color: gray;
+    font-size: 25px;
+    margin:0 30px 0 0;
+}
+.icon::after{
+    content: '';
+    display: block;
+}
+.container section{
+   margin:60px 60px; 
+}
+section article{
+    margin: 40px 70px;
+}
+.container section span{
+    display: block;
+    color:blue;
+    padding: 20px;
+    border-bottom: 2px solid blue;
+}
+.content1{
+    float: left;
+    width: 50%;
+}
+.content2{
+    overflow: hidden;
+}
+.footer{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,32 @@
+ul{
+    list-style: none;
+}
+.menu>li{
+    float: left;
+}
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #2f3e45;
+    color: white;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #a24f64;
+    color:black;
+}
+.drop{
+    position: relative;
+}
+.dropcontent{
+    padding: 0;
+    position: absolute;
+    left:-999px;
+}
+.drop:hover .dropcontent{
+    left: 0;
+}
