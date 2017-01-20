@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size:100%;
+    font-weight:300;
+    /*自己未写weight*/
+    color:#7b8b8e;
+}
+header{
+    display: flex;
+    padding:2rem 1rem;
+}
+ul,
+ol{
+    list-style: none;
+}
+#logo{
+    font-size: 1.2rem;
+    color: gray;
+}
+#nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#nav{
+    flex-grow:1; 
+    /*原网页为flex：1;flex 为flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto 取值为一个非负数字，则该数字为 flex-grow 值 取值为一个长度或百分比，则视为 flex-basis 伸缩基准 值*/
+}
+#nav li{
+    margin-left:2rem;
+}
+#nav li:first-child{
+    margin-left: 0;
+}   /*正好与原网页的写法相反，但是呈现效果一样*/
+#nav li a{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color:gray;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; 
+    /*flex-flow:为direction与wrap的换行*/
+}
+.content-box{
+    flex-grow:1;
+    padding:10px;
+    color:#f3f5f7;
+    /*下面的两个属性没有看出来 学习了*/
+
+}
+.content-box section{
+    max-width: 1200px;
+    /*以上行为后补充*/
+    margin:0 auto;
+    width: 100%;
+}
+.content-box h2 {
+    padding-left: 2%;
+    color:black;
+    line-height:3;
+}
+.video-list li {
+    width: 25%;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.video-list{
+    overflow: hidden;
+    width: 100%;
+}
+@media (max-width:600px) {
+    .video-list li {
+        width: 50%;
+    }
+}
+@media (min-width:900px) {
+    .video-list li {
+        width: 20%;
+    }
+}
+.video-list li a {
+    display: block;
+    position:relative;/*接下为图片放到盒子做定位*/ 
+    padding-top: 75%;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+.video-list li a:hover{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.video-list li img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.video-list li p{
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    color: black;
+    white-space: nowrap;
+    padding: 0 1rem;
+    text-overflow: ellipsis;/*为文本溢出时的表达方式*/
+}
+#foot{
+    text-align: center;
+    padding:1rem 0;
+}
+/*以上为大致我自己所写的内容，经过比对后部分已加入相应的模块中，发现自己还缺少以下模块*/
+img {
+  max-width: 100%;
+}
+a {
+  color: #7b8b8e;
+  transition: color 300ms 0s ease,
+              background 0.5s ease;
+}
+a:hover{
+    color:#4b5658;
+}
+#nav li img {
+  vertical-align: middle;
+  border-radius: 2px;
+  margin-right: 6px;
+}
